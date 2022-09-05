@@ -7,6 +7,22 @@ import java.util.Scanner;
     private String population;
     private String foundation;
 
+        /*public City(String region, String name, String district, String population, String foundation) {
+            this.region = region;
+            this.name = name;
+            this.district = district;
+            this.population = population;
+            this.foundation = foundation;
+        }*/
+
+        public  City(String[] data){
+            this.region = data[2];
+            this.name = data[1];
+            this.district = data[3];
+            this.population = data[4];
+            this.foundation = data[5];
+        }
+
         public String getRegion() {
             return region;
         }

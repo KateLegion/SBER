@@ -1,26 +1,33 @@
 import java.io.*;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
+import java.util.*;
 
 public class SortName {
-    public SortName() throws IOException {
-        File file = new File("src/Задача ВС Java Сбер.csv");
-        try (Scanner sc = new Scanner (file, StandardCharsets.UTF_8)) {
-            String[][] arCity = new String[1109][6];
-            for (int i = 0; i < arCity.length; i++) {
-                String text = sc.nextLine();
-                String[] words = text.split(";");
-                for (int j = 0; j < arCity[i].length; j++){
-                    arCity[i][j] = words[j];
-                }
-            }
-            for (String[] StringArr : arCity) {
-                for (String WordArr : StringArr) {
-                    System.out.print(WordArr + "\t");
-                }
-                System.out.println();
-            }
-        }
+
+
+    public void SortNameFirstChar(City[] data)  {
+
+        //for(int i = 0; i < data.length; i++)
+            //System.out.println(data[i].getFullData());
+        //for(int i = 0; i < 5; i++) {
+            //System.out.println((int)(data[i].getName().charAt(0)) + " " + data[i].getName().charAt(0));
+            //if(data[i].getName().charAt(0) >= 192) System.out.println(data[i].getName().charAt(0));
+        //}
+
+        for(int i = 0; i < 6; i++)
+            System.out.println(data[i].getFullData());
+
+        CompareTwoElement(data[0], data[1]);
+        CompareTwoElement(data[0], data[5]);
+        //for(int i = 0; i < 10; i++)
+           // System.out.println(data[i].getName());
+    }
+
+    public  void CompareTwoElement(City oneCity, City twoCity){
+        Integer firstNum = new Integer(oneCity.getPopulation());
+        Integer twoNum = new Integer((twoCity.getPopulation()));
+        if(firstNum > twoNum) System.out.println(oneCity.getName());
+        else System.out.println(twoCity.getName());
     }
 }
