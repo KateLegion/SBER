@@ -7,10 +7,6 @@ import java.util.Scanner;
     private String population;
     private String foundation;
 
-        public void SetName(String name) {
-            this.name = name;
-        }
-
         public String getRegion() {
             return region;
         }
@@ -51,4 +47,13 @@ import java.util.Scanner;
             this.foundation = foundation;
         }
 
+        public String getFullData() {
+            return "City{" +
+                    "name='" + name + '\'' +
+                    ", region='" + region + '\'' +
+                    ", district='" + district + '\'' +
+                    ", population='" + population + '\'' +
+                    ", foundation='" + foundation + '\'' +
+                    '}';
+        }
 }
