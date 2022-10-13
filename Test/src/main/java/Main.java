@@ -25,8 +25,10 @@ public class Main {
             e.printStackTrace();
         }
         //1 задание Печать списка
-        ArrayCity.printArrayCity(arCity);
+        //ArrayCity.printArrayCity(arCity);
 
+        //Сортировка по численности населения
+        SortPopulation.sortPopulation(arCity);
 
         // Сортировка по Алфавиту по первому Индексу Столбца
         /*SortName tmpSort = new SortName();

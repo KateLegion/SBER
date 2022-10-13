@@ -6,7 +6,7 @@ import java.util.*;
 public class SortName {
 
 
-    public void SortNameFirstChar(City[] data)  {
+    public void sortNameFirstChar(City[] data)  {
 
         //for(int i = 0; i < data.length; i++)
             //System.out.println(data[i].getFullData());
@@ -19,8 +19,8 @@ public class SortName {
 
             System.out.println(data[i].getFullData());
 
-        CompareTwoElement(data[0], data[1]);
-        CompareTwoElement(data[0], data[5]);
+        //CompareTwoElement(data[0], data[1]);
+        //CompareTwoElement(data[0], data[5]);
         //for(int i = 0; i < 10; i++)
            // System.out.println(data[i].getName());
     }
