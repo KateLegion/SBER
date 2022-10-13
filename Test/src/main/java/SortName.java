@@ -15,7 +15,8 @@ public class SortName {
             //if(data[i].getName().charAt(0) >= 192) System.out.println(data[i].getName().charAt(0));
         //}
 
-        for(int i = 0; i < 6; i++)
+        for(int i = 0; i < 5; i++)
+
             System.out.println(data[i].getFullData());
 
         CompareTwoElement(data[0], data[1]);
