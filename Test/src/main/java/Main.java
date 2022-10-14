@@ -27,13 +27,13 @@ public class Main {
         //1 задание Печать списка
         //ArrayCity.printArrayCity(arCity);
 
-        //Сортировка по численности населения
-        SortPopulation.sortPopulation(arCity);
+        //Сортировка по численности населения + индекс самого многочисленного города
+        //SortPopulation.sortPopulation(arCity);
 
         // Сортировка по Алфавиту по первому Индексу Столбца
-        /*SortName tmpSort = new SortName();
-        tmpSort.SortNameFirstChar(arCity);*/
-
+        SortName tmpSort = new SortName();
+        tmpSort.sortNameFirstChar(arCity);
+        //tmpSort.sortNameSecondChar(arCity);
 
         // TODO Пример работы Типовых и Ссылочных Данных
         //int x = 5;
