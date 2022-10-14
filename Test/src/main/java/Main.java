@@ -25,17 +25,20 @@ public class Main {
             e.printStackTrace();
         }
         // 1 задание Печать списка
-        //ArrayCity.printArrayCity(arCity);
+        //ArrayCity tmpArray = new ArrayCity();
+        //tmpArray.printArrayCity(arCity);
 
         // 2 задание Сортировка по Алфавиту
         //SortName tmpSort = new SortName();
         //tmpSort.sortNameFirstChar(arCity);
 
         // 3 задание Сортировка по численности населения + индекс самого многочисленного города
-        //SortPopulation.sortPopulation(arCity);
+        //SortPopulation tmpSortPop = new SortPopulation();
+        //tmpSortPop.sortPopulation(arCity);
 
         // 4 задание Подсчет городов в каждом регионе
-        //CountCity.countCityRegion(arCity);
+        //CountCity tmpCount = new CountCity();
+        //tmpCount.countCityRegion(arCity);
     }
 
 }
