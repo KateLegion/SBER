@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // Выделение памяти для хранения Данных с Считанного Файла
+        // Выделение памяти для хранения Данных из Считанного Файла
         City[] arCity = new City[1109];
         // Путь к файлу, где нужно считать города
         File file = new File("src/Задача ВС Java Сбер.csv");
@@ -24,24 +24,18 @@ public class Main {
         catch (IOException e) {
             e.printStackTrace();
         }
-        //1 задание Печать списка
+        // 1 задание Печать списка
         //ArrayCity.printArrayCity(arCity);
 
-        //Сортировка по численности населения + индекс самого многочисленного города
+        // 2 задание Сортировка по Алфавиту
+        //SortName tmpSort = new SortName();
+        //tmpSort.sortNameFirstChar(arCity);
+
+        // 3 задание Сортировка по численности населения + индекс самого многочисленного города
         //SortPopulation.sortPopulation(arCity);
 
-        // Сортировка по Алфавиту по первому Индексу Столбца
-        SortName tmpSort = new SortName();
-        tmpSort.sortNameFirstChar(arCity);
-        //tmpSort.sortNameSecondChar(arCity);
-
-        // TODO Пример работы Типовых и Ссылочных Данных
-        //int x = 5;
-        //System.out.println(x); //  5
-        //IncreaseNum(x);
-        //System.out.println(x); //  5
-        //x = IncreaseNumR(x);
-        //System.out.println(x); //  6
+        // 4 задание Подсчет городов в каждом регионе
+        //CountCity.countCityRegion(arCity);
     }
 
 }

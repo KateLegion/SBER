@@ -56,7 +56,7 @@ public class SortName {
                 }
             }
         }
-        /*for (int i = 1; i < data.length; i++) {
+        for (int i = 1; i < data.length; i++) {
             for (int j = i; j > 0; j--) {
                 if (data[i].getName().length() > 4 && data[i-j].getName().length() > 4) {
                     Character firstCityName = new Character(data[i - j].getName().charAt(4));
@@ -70,7 +70,22 @@ public class SortName {
                     continue;
                 }
             }
-        }*/
+        }
+        for (int i = 1; i < data.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (data[i].getName().length() > 5 && data[i-j].getName().length() > 5) {
+                    Character firstCityName = new Character(data[i - j].getName().charAt(5));
+                    Character secondCityName = new Character(data[i].getName().charAt(5));
+                    if ((int) data[i].getName().charAt(4) == (int) data[i - j].getName().charAt(4) && (int) data[i].getName().charAt(3) == (int) data[i - j].getName().charAt(3) && (int) data[i].getName().charAt(2) == (int) data[i - j].getName().charAt(2) && (int) data[i].getName().charAt(1) == (int) data[i - j].getName().charAt(1) && (int) data[i].getName().charAt(0) == (int) data[i - j].getName().charAt(0) && firstCityName > secondCityName) {
+                        City temp = data[i - j];
+                        data[i - j] = data[i];
+                        data[i] = temp;
+                    }
+                } else {
+                    continue;
+                }
+            }
+        }
 
         for (int i = 0; i < data.length; i++) {
             System.out.println(data[i].getFullData());

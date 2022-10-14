@@ -16,8 +16,8 @@ import java.util.Scanner;
         }*/
 
         public  City(String[] data){
-            this.region = data[2];
             this.name = data[1];
+            this.region = data[2];
             this.district = data[3];
             this.population = data[4];
             this.foundation = data[5];
