@@ -4,8 +4,8 @@ public class SortPopulation {
         int population = 0;
         for (int i = 1; i < data.length; i++) {
             for (int j = i; j > 0; j--) {
-                Integer firstCityPopulation = new Integer(data[i - j].getPopulation());
-                Integer secondCityPopulation = new Integer(data[i].getPopulation());
+                int firstCityPopulation = Integer.parseInt(data[i - j].getPopulation());
+                int secondCityPopulation = Integer.parseInt(data[i].getPopulation());
                 if (firstCityPopulation < secondCityPopulation) {
                     City temp = data[i];
                     data[i] = data[i - j];

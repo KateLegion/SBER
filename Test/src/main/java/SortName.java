@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class SortName {
+/*public class SortName {
 
 
     public static void sortNameFirstChar(City[] data) {
@@ -92,3 +92,4 @@ public class SortName {
         }
     }
 }
+*/
